@@ -1,0 +1,17 @@
+One-To-One association
+** make relationships between objects in JAVA. In JAVA, association of objects is very simple : we use a class’s attribute (variable) to do so. 
+**Below is the definition of two simple classes, Factory and Product
+
+// Factory class
+  public class Factory {
+    …
+    // Factory can make product
+    private Product product;
+    …
+  }
+// Product class
+  public class Product {
+    …
+    private String productName;
+    …
+  }
