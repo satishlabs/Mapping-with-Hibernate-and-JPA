@@ -1,0 +1,19 @@
+**Bi-directional One-To-One association
+** In a bidirectional relationship, we can fetch the details of two related entities by querying each entity separately. In other words, we can navigate from one entity to another entity and vise-versa
+**Book and Publisher. A renowned author gave his/her Book to a Publisher to publish or in other words, the Publisher used to publish a Book of a renowned author. 
+**Take a look at the definition of Publisher and Book
+
+// Publisher class
+  public class Publisher {
+      private int id = 0;
+      …
+      private Book book;
+      …
+  }
+// Book class
+  public class Book {
+      private int id = 0;
+      …
+      private Publisher publisher;
+      …
+  }
